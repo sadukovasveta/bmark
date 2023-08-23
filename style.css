@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+#header {
+  padding: 20px 0;
+  background: var(--accent-2-shade, #fbedda);
+}
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.links a {
+  font-family: "Poltawski Nowy", serif;
+  font-size: 18px;
+  color: #021102;
+}
+.links button {
+  font-family: "Poltawski Nowy", serif;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+
+  padding: 12px 20px;
+  background: #13a6ba;
+  border: none;
+  border-radius: 8px;
+}
+.moblie-menu span {
+  font-size: 30px;
+}
+.moblie-menu {
+  display: none;
+}
+@media (max-width: 768px) {
+  .moblie-menu {
+    display: flex;
+  }
+  .links {
+    display: none;
+  }
+}
+#hero {
+  background: var(--accent-2-shade, #fbedda);
+}
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title h1 {
+  font-size: 80px;
+  font-weight: 800;
+  text-align: center;
+  max-width: 900px;
+  padding-top: 100px;
+}
+.title p {
+  font-size: 20px;
+  color: #677071;
+  text-align: center;
+  padding-top: 30px;
+}
+.services {
+  width: 100%;
+  padding: 90px 0;
+  background: white;
+  margin-top: 100px;
+  border-radius: 30px;
+}
+.hero-content img {
+  width: 100%;
+}
+@media (max-width: 1024px) {
+  .title h1 {
+    font-size: 60px;
+    padding-top: 65px;
+  }
+  .services {
+    margin-top: 35px;
+  }
+}
+@media (max-width: 768px) {
+  .title h1 {
+    font-size: 50px;
+    padding-top: 35px;
+  }
+  .services {
+    margin-top: 35px;
+  }
+}
+@media (max-width: 480px) {
+  title h1 {
+    font-size: 40px;
+    padding-top: 25px;
+  }
+  .services {
+    margin-top: 25px;
+  }
+  title p {
+    padding-top: 10px;
+  }
+}
